@@ -42,6 +42,7 @@ class Data(metaclass=Singleton):
                 for question in questions:
                     question_all_variants = self.createAllTextVariants(question)
                     for question_variant in question_all_variants:
+                        question_variant = question_variant.lower()
                         out_file.write("__label__" + str(i) + " " + question_variant + "\n")
 
     def load_answers(self, json_object):
@@ -73,6 +74,7 @@ class Data(metaclass=Singleton):
                 self.createAllCombinations(tail, seqence + part)
 
     def get_answer(self, message):
+        message = message.lower()
         label = self.fast_text_model.predict(message)[0][0]
         answer_index = int(label.replace("__label__", ""))
         possible_answers = self.answers[answer_index]
