@@ -3,7 +3,7 @@
 ## How to run
 ### The first time
 ```commandline
-docker build -t alquist_interactive_movie_dialog_image .; docker run -d --name alquist_interactive_movie_dialog_container alquist_interactive_movie_dialog_image
+docker build -t alquist_interactive_movie_dialog_image .; docker run -d -p 5678:5678 --name alquist_interactive_movie_dialog_container alquist_interactive_movie_dialog_image
 ```
 
 ### Redeployment
