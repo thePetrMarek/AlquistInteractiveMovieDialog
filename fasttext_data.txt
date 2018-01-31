@@ -1,0 +1,5 @@
+__label__0 Who is Karel Čapek?
+__label__0 What is the Karel Čapek known for?
+__label__1 What does R U R mean?
+__label__2 Where does the story take place?
+__label__2 Where is the story located?

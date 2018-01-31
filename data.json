@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "name": "karelcapek",
+      "value": "Karel Chupek|Karel Čapek|Chupek|Čapek|the writer|the author|"
+    },
+    {
+      "name": "test",
+      "value": "this is test|test"
+    }
+  ],
+  "pairs": [
+    {
+      "question": [
+        "Who is Karel Čapek?",
+        "What is the Karel Čapek known for?"
+      ],
+      "answer": [
+        "Čapek is author of R.U.R."
+      ]
+    },
+    {
+      "question": [
+        "What does R U R mean?"
+      ],
+      "answer": [
+        "Rossum's universal robots. It is the name of the factory."
+      ]
+    },
+    {
+      "question": [
+        "Where does the story take place?",
+        "Where is the story located?"
+      ],
+      "answer": [
+        "The story takes place somewhere in Prague."
+      ]
+    }
+  ]
+}
