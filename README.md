@@ -8,5 +8,5 @@ docker build -t alquist_interactive_movie_dialog_image .; docker run -d --name a
 
 ### Redeployment
 ```commandline
-docker rm alquist_interactive_movie_dialog_container -f;docker build -t alquist_interactive_movie_dialog_image .;docker run -d --name alquist_interactive_movie_dialog_container alquist_interactive_movie_dialog_image;
+docker rm alquist_interactive_movie_dialog_container -f;docker build -t alquist_interactive_movie_dialog_image .;docker run -d -p 5678:5678 --name alquist_interactive_movie_dialog_container alquist_interactive_movie_dialog_image;
 ```
