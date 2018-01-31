@@ -1,4 +1,10 @@
+__label__0 Who is Karel Chupek?
 __label__0 Who is Karel Čapek?
+__label__0 Who is Chupek?
+__label__0 Who is Čapek?
+__label__0 Who is the writer?
+__label__0 Who is the author?
+__label__0 Who is ?
 __label__0 What is the Karel Čapek known for?
 __label__1 What does R U R mean?
 __label__2 Where does the story take place?

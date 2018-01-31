@@ -2,7 +2,7 @@
   "entities": [
     {
       "name": "karelcapek",
-      "value": "Karel Chupek|Karel Čapek|Chupek|Čapek|the writer|the author|"
+      "value": "(Karel Chupek|Karel Čapek|Chupek|Čapek|the writer|the author|)"
     },
     {
       "name": "test",
@@ -12,7 +12,7 @@
   "pairs": [
     {
       "question": [
-        "Who is Karel Čapek?",
+        "Who is $$karelcapek$$?",
         "What is the Karel Čapek known for?"
       ],
       "answer": [
