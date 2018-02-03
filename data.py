@@ -2,6 +2,7 @@ import fastText
 import json
 import random
 
+from expand_text import expand_text
 from singleton import Singleton
 
 
@@ -16,7 +17,7 @@ class Data(metaclass=Singleton):
         json_object = self.replace_entities(json_object)
         self.load_answers(json_object)
         self.create_labeled_questions_file(json_object, "fasttext_data.txt")
-        self.fast_text_model = fastText.train_supervised("fasttext_data.txt")
+        self.fast_text_model = fastText.train_supervised("fasttext_data.txt", epoch=50)
 
     def load_json(self, data_file):
         with open(data_file, "r", encoding="utf-8") as in_file:
@@ -27,6 +28,10 @@ class Data(metaclass=Singleton):
         for entity in json_object["entities"]:
             entity_name = entity["name"]
             entity_value = entity["value"]
+
+            for i, entity2 in enumerate(json_object["entities"]):
+                json_object["entities"][i]["value"] = entity2["value"].replace("$$" + entity_name + "$$", entity_value)
+
             for i, pair in enumerate(json_object["pairs"]):
                 for j, question in enumerate(pair["question"]):
                     json_object["pairs"][i]["question"][j] = question.replace("$$" + entity_name + "$$", entity_value)
@@ -40,7 +45,7 @@ class Data(metaclass=Singleton):
             for i, pair in enumerate(pairs):
                 questions = pair["question"]
                 for question in questions:
-                    question_all_variants = self.createAllTextVariants(question)
+                    question_all_variants = expand_text(question)
                     for question_variant in question_all_variants:
                         question_variant = question_variant.lower()
                         out_file.write("__label__" + str(i) + " " + question_variant + "\n")
@@ -51,27 +56,9 @@ class Data(metaclass=Singleton):
             answers = pair["answer"]
             answers_all_variants = []
             for answer in answers:
-                answers_all_variants += self.createAllTextVariants(answer)
+                answers_all_variants += expand_text(answer)
             self.answers.append(answers_all_variants)
 
-    def createAllTextVariants(self, pattern):
-        self._allCombinationsOfSinglePattern = []
-        pattern = pattern.replace(")", "(")
-        patterns = pattern.split("(")
-        patternsSplited = []
-        for pattern in patterns:
-            patternsSplited.append(pattern.split("|"))
-        self.createAllCombinations(patternsSplited, "")
-        result = self._allCombinationsOfSinglePattern
-        return result
-
-    def createAllCombinations(self, groups, seqence):
-        if len(groups) == 0:
-            self._allCombinationsOfSinglePattern.append(seqence)
-        else:
-            head, *tail = groups
-            for part in head:
-                self.createAllCombinations(tail, seqence + part)
 
     def get_answer(self, message):
         message = message.lower()

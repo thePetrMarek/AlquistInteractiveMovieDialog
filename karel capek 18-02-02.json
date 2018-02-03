@@ -1,0 +1,385 @@
+{
+  "entities": [
+    {
+      "name": "kc_all_he",
+      "value": "($$kc$$|$$kc_cont_nom$$)"
+    },
+    {
+      "name": "kc_all_him",
+      "value": "($$kc$$|$$kc_cont_acu$$)"
+    },
+    {
+      "name": "kc",
+      "value": "(Karel Chupek|Karel Čapek|Karel|Karl|Chupek|Čapek|the writer|this writer|the author|this author|the playwright|this playwright|the author of $$rur$$)"
+    },
+    {
+      "name": "kc_cont_nom",
+      "value": "(he|this guy|this man)"
+    },
+    {
+      "name": "kc_cont_acu",
+      "value": "(him|this guy|this man)"
+    },
+    {
+      "name": "kc_poss_his",
+      "value": "($$kc_poss_cont$$|$$kc_all_him$$'s)"
+    },
+    {
+      "name": "kc_poss_ofhis",
+      "value": "of ($$kc_poss_cont$$|$$kc_cont_acu$$|$$kc$$)"
+    },
+    {
+      "name": "kc_poss_cont",
+      "value": "his"
+    },
+    {
+      "name": "rur",
+      "value": "(|the play) (RUR|R.U.R.|R. U. R.|are you are|are you R|R U are|R you are)"
+    },
+    {
+      "name": "rur_cont",
+      "value": "(the play|this play|the theater play|the theatre play|this theater play|this theatre play|it)"
+    },
+    {
+      "name": "rur_all",
+      "value": "($$rur$$|$$rur_cont$$)"
+    }
+  ],
+  "pairs": [
+    {
+      "question": [
+        "who was $$kc_all_he$$",
+        "(can you|could you|would you|) tell me (|something) about $$kc_all_him$$",
+        "what (can you|could you|would you) tell me about $$kc_all_him$$",
+        "what do you know about $$kc_all_him$$",
+        "what is $$kc_all_he$$ (best|) known for",
+        "why is $$kc_all_he$$ popular",
+        "what did $$kc_all_he$$ do"
+      ],
+      "answer": [
+        "Karel Chupek was a Czech writer of the early 20th century. He wrote about a wide variety of subjects, but he is best known worldwide for his science fiction, especially his play called R.U.R., which introduced the word robot. Chupek was nominated for the Nobel Prize in Literature seven times, but he never won."
+      ]
+    },
+    {
+      "question": [
+        "(can you|could you|would you|) tell me (|something) more about $$kc_all_him$$",
+        "do you know anything more about $$kc_all_him$$",
+        "what (else|more) do you know about $$kc_all_him$$",
+        "tell me anything (|more) (|about $$kc_all_him$$)"
+      ],
+      "answer": [
+        "Well, he had multiple roles throughout his career, including playwright, dramatist, essayist, publisher, literary reviewer, photographer, and art critic. Several awards are named after him, such as the Karel Chupek Prize, which is awarded for literary work that contributes to reinforcing or maintaining democratic and humanist values in the society.",
+        "He always wrote with intelligence and humor. His works are known for their interesting and precise description of reality. Chupek is renowned for his excellent work with the Czech language."
+      ]
+    },
+    {
+      "question": [
+        "(what's|what is|what was|how was|how is|how's) $$kc_poss_his$$ (surname|name|given name) (|again)",
+        "(what's|what is|what was|how was|how is|how's) the (surname|name|given name) $$kc_poss_ofhis$$ (|again)",
+        "can you spell $$kc_poss_his$$ (surname|name|given name)",
+        "(can|could|would) you repeat $$kc_poss_his$$ (surname|name|given name)",
+        "(can|could|would) you repeat the (surname|name|given name) $$kc_poss_ofhis$$"
+      ],
+      "answer": [
+        "His whole name is Karel Chupek. The surname is spelled, C, A, P, E, K."
+      ]
+    },
+    { 
+      "question": [
+        "is $$kc_all_he$$ (alive|still alive|dead|already dead|living)",
+        "does $$kc_all_he$$ (|still) live",
+        "when did $$kc_all_he$$ live"
+      ],
+      "answer": [
+        "His life began in 1890, and ended in 1938, just before the second world war started."
+      ]
+    },
+    {
+      "question": [
+        "(on what day|on which day|in what country|in which country|in what place|when|where|where and when|when and where) was $$kc_all_he$$ born"
+      ],
+      "answer": [
+        "Karel Chupek was born on 9 January 1890 in Mullay Svatonovitsay, a small village in Austria-Hungary, today the Czech Republic."
+      ]
+    },
+    {
+      "question": [
+        "(on what day|on which day|in what country|in which country|in what town|in what city|in which city|in which town|in what place|when|where|where and when|when and where) did $$kc_all_he$$ (die|pass away)",
+        "how old was $$kc_all_he$$ when he (died|passed away)",
+        "how about his death"
+      ],
+      "answer": [
+        "Chupek died in Prague, Czechoslovakia, on 25 December 1938. He was only 48 years old."
+      ]
+    },
+    {
+      "question": [
+        "(why|how) did $$kc_all_he$$ die (|so young)",
+        "what (caused|was the cause of) $$kc_poss_his$$ death",
+        "what (caused|was the cause of) the death $$kc_poss_ofhis$$"
+      ],
+      "answer": [
+        "In 1938, he contracted a common cold. As he had suffered all his life from spondyloarthritis, and was also a heavy smoker, Chupek died of pneumonia."
+      ]
+    },
+    {
+      "question": [
+        "was ($$kc_all_he$$|it) (male|a man) (|or a woman|or female)",
+        "what was $$kc_poss_his$$ (gender|sex)",
+        "what was the (gender|sex) $$kc_poss_ofhis$$"
+      ],
+      "answer": [
+        "He was a man. I think that's quite clear."
+      ]
+    },
+    {
+      "question": [
+        "where was $$kc_all_he$$ from",
+        "what was $$kc_poss_his$$ nationality",
+        "was $$kc_all_he$$ (a|) (Czech|German|Czechoslovak|American|British|Polish|Slovak|French)",
+        "was $$kc_all_he$$ from (Czechia|the Czech|the Czech Republic|Czech Republic|Czechoslovakia|Slovakia|America|the US|the USA|Britain|England|Great Britain|the Great Britain|France|Poland|Germany|nazi Germany)"
+      ],
+      "answer": [
+        "He was Czechoslovak, from the Czech part of the country, nowadays the Czech Republic. His books are originally written in Czech."
+      ]
+    },
+    {
+      "question": [
+        "did $$kc_all_he$$ live in (Czechia|the Czech Republic|Czech Republic|the Czech|Czechoslovakia|Slovakia|America|the US|the USA|Britain|England|Great Britain|the Great Britain|France|Poland|Germany|nazi Germany)",
+        "(so|) $$kc_all_he$$ lived in (Czechia|the Czech Republic|Czech Republic|the Czech|Czechoslovakia|Slovakia|America|the US|the USA|Britain|England|Great Britain|the Great Britain|France|Poland|Germany|nazi Germany)",
+        "where did $$kc_all_he$$ live",
+        "where was $$kc_poss_his$$ home",
+        "what was $$kc_poss_his$$ home country",
+        "did $$kc_all_he$$ (visit|travel to)"
+      ],
+      "answer": [
+        "He spent most of his life in his home country Czechoslovakia, but he traveled a lot, and wrote a bunch of travel books, for example about Spain, Italy, Holland, or Scandinavia."
+      ]
+    },
+    {
+      "question": [
+        "(where|what) did $$kc_all_he$$ study",
+        "(on|at|) (what|which) (school|high school|university) did $$kc_all_he$$ (study|go to|attend)",
+        "(tell me about|how about|what do you know about|) his studies"
+      ],
+      "answer": [
+        "He studied philosophy and aesthetics in Prague at Charles University, but he also spent some time at the Friedrich Wilhelm University in Berlin, and at the Sorbonne in Paris. He graduated as a doctor of philosophy in 1915."
+      ]
+    },
+    {
+      "question": [
+        "(did $$kc_all_he$$ win|did $$kc_all_he$$ receive|was $$kc_all_he$$ awarded) (a|the) nobel (|prize) (|for literature|in literature)"
+      ],
+      "answer": [
+        "He was nominated for the Nobel Prize in Literature seven times, but he never won. He is still considered one of the best Czech writers of all time."
+      ]
+    },
+    {
+      "question": [
+        "was $$kc_all_he$$ married",
+        "did $$kc_all_he$$ have a (wife|spouse)",
+        "did $$kc_all_he$$ have (children|kids|a son|a daughter)",
+        "what was the name of $$kc_poss_his$$ (wife|spouse)"
+      ],
+      "answer": [
+        "In 1935, three years before his death, Chupek married actress Olga Scheinpflugova. They didn't have any children."
+      ]
+    },
+    {
+      "question": [
+        "did $$kc_all_he$$ have (a brother|a sibling|siblings)",
+        "(was|is) $$kc_all_he$$ (the|a) brother of (the painter|) (Yosef|Joseph|Josef) (|Chupek|Chupeck)",
+        "(was|is) (the painter|) (Yosef|Joseph|Josef) (|Chupek|Chupeck) ($$kc_poss_his$$|the) brother ($$kc_poss_ofhis$$|)"
+      ],
+      "answer": [
+        "Yes, Karel's older brother Yosef Chupek, was a successful painter, but also a writer and a poet. By the way, it was Yosef who invented the word robot for Karel's play R.U.R."
+      ]
+    },
+    {
+      "question": [
+        "did $$kc_all_he$$ have (a sister|more siblings|another sibling)",
+        "(do you know anything|what do you know|what can you tell me|how) about ($$kc_poss_his$$|the) sister (|$$kc_poss_ofhis$$)",
+        "(can you|could you|would you) tell me (something|) (|more) about ($$kc_poss_his$$|the) sister (|$$kc_poss_ofhis$$)",
+        "(who was|what's the name of|what was the name of) ($$kc_poss_his$$|the) sister (|$$kc_poss_ofhis$$)"
+      ],
+      "answer": [
+        "Karel had one sister, her name was Helena. She also wrote a few books, some of them are memoirs of her brothers Karel and Yosef."
+      ]
+    },
+    {
+      "question": [
+        "(do you know anything|what do you know|what can you tell me|how) about ($$kc_poss_his$$|the) brother (|$$kc_poss_ofhis$$) (|Yosef|Josef|Joseph)",
+        "(can you|could you|would you) tell me (something|) (|more) about ($$kc_poss_his$$|the) brother (|$$kc_poss_ofhis$$) (|Yosef|Josef|Joseph)",
+        "(who was|what's the name of|what was the name of) ($$kc_poss_his$$|the) brother (|$$kc_poss_ofhis$$)"
+      ],
+      "answer": [
+        "Karel's older brother Yosef Chupek, was a successful painter, but also a writer and a poet. By the way, it was Yosef who invented the word robot for Karel's play R.U.R."
+      ]
+    },
+    {
+      "question": [
+        "(who was|what was the name of) ($$kc_poss_his$$|the) (father|mother|dad|mom|mum) (|$$kc_poss_ofhis$$)",
+        "(do you know anything|what do you know|what can you tell me|how) about ($$kc_poss_his$$|the) (family|father|mother|dad|mom|mum) (|$$kc_poss_ofhis$$)",
+        "(can you|could you|would you) tell me (something|) (|more) about ($$kc_poss_his$$|the) (family|father|mother|dad|mom|mum) (|$$kc_poss_ofhis$$)"
+      ],
+      "answer": [
+        "His father's name was Antoneen, and his mother's Boshena. Antoneen worked as a doctor but was also an active citizen; Boshena collected folk songs and poems."
+      ]
+    },
+    {
+      "question": [
+        "(|did $$kc_all_he$$ know|was $$kc_all_he$$ friends with|was $$kc_all_he$$ a colleague of) (the Czechoslovak president|the president|) (TGM|T.G.M.|T. G. M.|T G M|Masaryk)",
+        "who (was $$kc_poss_his$$ friend|were $$kc_poss_his$$ friends|was $$kc_all_he$$ friends with)",
+        "who (was $$kc_poss_his$$ colleague|were $$kc_poss_his$$ colleagues)",
+        "did $$kc_all_he$$ have (a famous|an important) (friend|colleague)",
+        "(did $$kc_all_he$$ know|was $$kc_all_he$$ friends with|was $$kc_all_he$$ a colleague of) (|the president|the Czechoslovak president)"
+      ],
+      "answer": [
+        "Chupek was a close friend of the first Czechoslovak president Tomash Garrigue Masaryk. Their frequent conversations on various topics later served as basis for Chupek's book, called Talks with T.G.Masaryk."
+      ]
+    },
+    {
+      "question": [
+        "what did $$kc_all_he$$ look like",
+        "(do you have|can I see) (a|$$kc_poss_his$$) (photo|picture|photography) (|$$kc_poss_ofhis$$)",
+        "(can|could|would) you show me (a|$$kc_poss_his$$) (photo|picture|photography) (|$$kc_poss_ofhis$$)",
+        "his appearance",
+        "was $$kc_all_he$$ (black|white|handsome|ugly|beautiful|good looking)",
+        "what color (were|was|is) $$kc_poss_his$$ (hair|eyes|eyebrows|skin)",
+        "what did $$kc_poss_his$$ (face|eyes|hair|figure|ears|mouth|nose) look like"
+      ],
+      "answer": [
+        "Well, here's a photo of Karel Chupek."
+      ]
+    },
+    {
+      "question": [
+        "(|what) did $$kc_all_he$$ like",
+        "(what|which) was $$kc_poss_his$$ (favorite|favourite)"
+      ],
+      "answer": [
+        "Sorry, I don't know much about his preferences."
+      ]
+    },
+    {
+      "question": [
+        "(which|what) are ($$kc_poss_his$$|the) (|most) (|famous|important|interesting|major) (works|plays|novels|books|dramas) (|$$kc_poss_ofhis) (|that I should know|that one should know)",
+        "(which|what) is ($$kc_poss_his$$|the) (|most) (|famous|important|interesting|major) (work|play|novel|book|drama) (|$$kc_poss_ofhis) (|that I should know|that one should know)",
+        "is $$rur_all$$ ($$kc_poss_his$$|the) most (famous|important) (work|play|novel|book|drama) (|$$kc_poss_ofhis)",
+        "which (|one) of $$kc_poss_his$$ (works|plays|novels|books|dramas) should (I|one|people) know",
+        "which (|one) of $$kc_poss_his$$ (works|plays|novels|books|dramas) should (I|one|people) (read|see)"
+      ],
+      "answer": [
+        "Apart from the play R.U.R., I can recommend the War with the Newts, a satirical dystopian novel, or the play called The White Disease. But these are rather serious, Chupek also published many books of funny short stories."
+      ]
+    },
+    {
+      "question": [
+        "what (|literary) genre is $$rur_all$$",
+        "is $$rur_all$$ (science fiction|sci-fi|horror|thriller|about apocalypse|apocalyptic)",
+        "is $$rur_all$$ (a|an) (science fiction|sci-fi|horror|thriller|about apocalypse|apocalyptic) (theater|theatre|) (play|drama)",
+        "when does the (plot|story) take place",
+        "what is $$rur_all$$ about",
+        "what is the (plot|story) (|of $$rur_all$$) (|about)",
+        "(can you tell me|could you tell me|would you tell me|tell me|I want to hear|I wanna hear) (something|) (|more) about $$rur_all$$",
+        "I'm interested in $$rur_all$$ (|that) (|you mentioned|you're talking about|you are talking about)",
+        "(can you|could you|will you|would you) (tell me|repeat) (|something|some|the|what you said) (more|) (|information) about $$rur_all$$"
+      ],
+      "answer": [
+        "R.U.R. is a science fiction play. The story takes place in a factory that makes artificial people, called robots, from synthetic organic matter. These robots may be mistaken for humans and can think for themselves. They seem happy to work for humans at first, but a robot rebellion leads to the extinction of the human race. But, there is still some hope?"
+      ]
+    },
+    {
+      "question": [
+        "when was $$rur_all$$ (|originally) (written|created|published)",
+        "when was $$rur_all$$ (|first) put on (|the) (|stage)",
+        "when did $$kc_all_he$$ write $$rur_all$$"
+      ],
+      "answer": [
+        "The play R.U.R. premiered in 1921. It quickly became famous, and by 1923, it had been translated into thirty languages."
+      ]
+    },
+    {
+      "question": [
+        "(who|did $$kc_all_he$$) (|really|actually) (invented|created|came up with) the word robot",
+        "was it (|really|actually) ($$kc_all_he$$|him) who (invented|created|came up with) the word robot",
+        "(wasn't|was) it (in fact|actually|really|) (|his brother) (Josef|Joseph|Yosef) (|Chupek) who (invented|created|came up with) the word robot"
+      ],
+      "answer": [
+        "Well, it was actually Karel's brother Yosef who invented it. The word robot comes from the Czech word, row bow ta, which means literally serf labor, and figuratively drudgery or hard work."
+      ]
+    },
+    {
+      "question": [
+        "what does (|the word) robot mean (|in Czech|in check)",
+        "why did $$kc_all_he$$ name (the robots|robots|them) (like this|robots)",
+        "why did $$kc_all_he$$ give (the robots|robots|them) the name (the robots|robots|robot)",
+        "why (is the word|is it|did $$kc_all_he$$ choose the word|did $$kc_all_he$$ choose the name) robot"
+      ],
+      "answer": [
+        "The word robot comes from the Czech word, row bow ta, which means literally serf labor, and figuratively drudgery or hard work. By the way, it was actually Karel's brother Yosef who invented it."
+      ]
+    },
+    {
+      "question": [
+        "what were $$kc_poss_his$$ (worldviews|opinions|perspectives)",
+        "what was $$kc_poss_his$$ (worldview|life perspective)",
+        "what did $$kc_all_he$$ think about (the world|the world war one|the first world war|the great war|the second world was|the world war two|humans|humanity)",
+        "what (cultural|literary|) (style|movement|system) (|of thought) (was $$kc_all_he$$ a part of|was $$kc_all_he$$ part of|did $$kc_all_he$$ represent)",
+        "was $$kc_all_he$$ a humanist",
+        "(why is $$rur_all$$|why did $$kc_all_he$$|what inspired $$kc_all_him$$ to) write (|a play) about (robots|AI|apocalypse|such a topic|such topic|this topic)",
+        "how come that $$kc_all_he$$ wrote (|a play) about (robots|AI|apocalypse|such a topic|such topic|this topic)",
+        "(why did $$kc_all_he$$|what inspired $$kc_all_him$$ to) write $$rur_all$$"
+      ],
+      "answer": [
+        "Chupek was a humanist, he focused on ethics, people and their stories. Many of his works discuss ethical aspects of industrial inventions, mass production, nuclear weapons, or intelligent artificial beings. Chupek often expressed fear of social disasters, dictatorship, violence, or human stupidity. But he always tried to find hope, and the way out."
+      ]
+    },
+    {
+      "question": [
+        "how old was $$kc_all_he$$ when he wrote $$rur_all$$",
+        "at what age did $$kc_all_he$$ write $$rur_all$$"
+      ],
+      "answer": [
+        "The play was written in 1920, when Chupek was 30 years old."
+      ]
+    },
+    {
+      "question": [
+        "how long is $$rur_all$$",
+        "is $$rur_all$$ a long (play|book|drama)"
+      ],
+      "answer": [
+        "I think it's roughly 80 pages, it's quite short."
+      ]
+    },
+    {
+      "question": [
+        "what (does|do) (|the three letters|the letters) (RUR|R.U.R.|R. U. R.|are you are|are you R|R U are|R you are|the name of the play|in the name of the play|the three letters) (mean|stand for)",
+        "(what's|what is) the meaning of (|the three letters|the letters) (RUR|R.U.R.|R. U. R.|are you are|are you R|R U are|R you are|the name of the play|in the name of the play|the three letters)"
+      ],
+      "answer": [
+        "It stands for Rossum's Universal Robots, the name of the fictional company that makes robots. Rossum, is the name of the founder of the company."
+      ]
+    },
+    {
+      "question": [
+        "(is $$rur_all$$|has $$rur_all$$ been|was $$rur_all$$) translated (in|into) English",
+        "can I (read|see|watch|get|buy) $$rur_all$$ in English",
+        "is $$rur_all$$ available in English",
+        "is there an English translation of $$rur_all$$"
+      ],
+      "answer": [
+        "Yes, it was translated into English in 1923, just two years after its premiere. There are newer translations as well, from 1989 and 1999."
+      ]
+    },
+    {
+      "question": [
+        "(when|where|where and when|when and where) does the (story|plot) (|of $$rur_all$$) (take place|happen|occur)"
+      ],
+      "answer": [
+        "Chupek stated that the story of R.U.R. takes place in unspecified future time in an unspecified place. We just know that it's in a big robot factory."
+      ]
+    }
+  ]
+}
